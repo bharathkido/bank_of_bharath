@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bank app</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="./stylesheet/stylesheet.css">
+
+    <script src="./js/validatebank.js"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="header">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ4iic6Q7naDIhKgrtfBhS_agKKatxkplH4ZDgrR_wztBGrPAEQlX7nqGUvqATzHKs7RTURSCb2JADhZAGfakVRRoru71gUV_I&usqp=CAU&ec=45725302" style="float:left;width:110px;height:80px;">
+        <h1 id="home"> &nbspBank Of Bharath </h1>
+    </div>
+
+
+
+
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+            <button class="dropbut">Account <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="createaccount.html">Create New Account</a>
+                <a href="#">Recent Transactions</a>
+                <a href="#">Update details</a>
+                <a href="#">Open Joint Account</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbut">Credit/Debit
+ <i class="fa fa-caret-down"></i></button>
+            <div class="dropdown-content">
+                <a href="#">Apply Credit Card</a>
+                <a href="#">Apply Debit Card</a>
+                <a href="#">Credit Card Offers</a>
+                <a href="#">Debit Card Offers</a>
+                <a href="#">Your Card Status</a>
+            </div>
+        </div>
+
+
+        <a href="#features">Features</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="login.html">Log Out</a>
+        <i class="fas fa-search-dollar"></i>
+        <input type="text" placeholder="Search.." id="search1" style="float:right;height:30px;width:250px;margin-top:7px;margin-right:10px;">
+    </div>
+
+
+    <div class="row">
+        <div class="column side">
+            <h2>Offers For You</h2>
+            <p class="offer">Get 10% discount for credit card users</p>
+            <p class="offer">Invest on Gold for 5% offer</p>
+            <p class="offer">Open Account toady with 100.Rs balance</p>
+            <p class="offer">2% Interest Loans</p>
+
+        </div>
+
+
+
+        <div class="column middle">
+            <div class="card" style="float:left;width:50%">
+                <img src="https://www.pngkey.com/png/full/114-1149878_setting-user-avatar-in-specific-size-without-breaking.png" alt="Avatar" style="width:90%">
+                <div class="container">
+                    <h4><b>Bharath Kumar</b></h4>
+                    <p>Founder</p>
+                </div>
+
+            </div>
+            <div class="card1" style="float:right;width:50%;padding-bottom:7px;">
+                <img src="https://www.kindpng.com/picc/m/22-223941_transparent-avatar-png-male-avatar-icon-transparent-png.png" alt="Avatar" style="max-width:250px;padding-left:30px;">
+                <div class="container1">
+                    <h4 style="padding-top:30px"><b>Kido</b></h4>
+                    <p>Co-Founder</p>
+                </div>
+            </div>
+
+        </div>
+        <div class="column side1">
+            <h2>Money Transfer</h2>
+            <div class="container">
+                <form name="contactForm" onsubmit="return validate()" action="populate.html">
+                    <label for="uname"><b>Account Number</b></label>
+                    <input type="text" placeholder="1234-5678-1234-5678" onkeypress="return onlyNumber(event)" name="uname" data-mask="0000 0000 0000 0000" id="acc" maxlength="16">
+
+
+                    <div id="money" style="color:red"></div>
+                    <button type="submit" id="but1" target="login.html">Transfer Money</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div><br><br>
+    <div class="row">
+        <div class="column side2" id="news">
+            <a href="#" style="color:#ff3333;">
+                <h3>1. GST Mutual</h3>
+            </a>
+            <p>PF balanceNPSUpcoming IPOIPOSensexTop GainersGSTIndia NewsBudgetTop 10 Mutual FundsAadhaar Card DownloadIFSC CodeTDSAadhaar card update</p>
+            <a href="#" style="color: #ff3333;">
+                <h3> 2. 15% pay hike for over 8.5 lakh bank staff</h3>
+            </a>
+            <p>Over 8.5 lakh employees, majorly from public sector banks, will get a 15% hike in pay, with the conclusion of the 11th Bipartite Wage Negotiations on Wednesday</p>
+            <a href="#" style="color: #ff3333;">
+                <h3>3. RBI allows co-origination of PSL loans by banks</h3>
+            </a>
+            <p>The RBI hopes that the co-lending model (CLM), will improve the flow of credit to the unserved and underserved sector of the economy at an affordable cost, considering the lower cost of funds from banks and greater reach of the NBFCs.</p>
+        </div>
+
+        <div class="column middle1">
+            <img class="newsimg" src="https://content.indiainfoline.com/_media/iifl/img/misc/2015-08/03/full/world-news-1438594300-977300.jpg" width=600px height=320px>
+        </div>
+
+    </div>
+
+    <div class="row" id="features">
+        <div class="column side3">
+            <img src="https://brandsite-static.hdfclife.com/media/image/features.png">
+        </div>
+
+        <div class="column middle2">
+            <div class="container2">
+                <h2>Features</h2>
+                <i class="fa fa-arrow-circle-right"></i>
+                <p>Pick your cover option from 4 options--- Life Option, Extra Life Option, Income Option and Income Plus Option</p>
+                <i class="fa fa-arrow-circle-right"></i>
+                <p>Provide monthly income to your folks in your absence under Income and Income Plus Option</p>
+                <i class="fa fa-arrow-circle-right"></i>
+                <p>Increase your insurance cover at the key milestones of your life under Life Option</p>
+                <i class="fa fa-arrow-circle-right"></i>
+                <p>Add riders for protection against Accidental Disability or Critical Illness to your term plan to stay extra secure</p>
+                <i class="fa fa-arrow-circle-right"></i>
+                <p>Flexible policy term options.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="column side4">
+            <img class="insurance" src="https://www.hdfclife.com/static/assets/img/product_page_animation/c2pp/why_this_plan/family.png">
+            <img class="insurance1" src="https://www.hdfclife.com/static/assets/img/product_page_animation/c2pp/why_this_plan/hands.png">
+        </div>
+
+        <div class="column middle3">
+            <div class="container3">
+                <h2><b>Why <span style="color:red;">you need this Plan ?</span></b></h2>
+                <i class="fas fa-hand-point-right"></i>
+                <p class="plan">Ensure financial stability for your loved ones forever</p>
+                <i class="fas fa-hand-point-right"></i>
+                <p class="plan">Maintain your family's standard of living even in your absence</p>
+                <i class="fas fa-hand-point-right"></i>
+                <p class="plan">Provide complete protection to your dear ones at an affordable price</p>
+                <i class="fas fa-hand-point-right"></i>
+                <p class="plan">Your family stays secured due to the assured income they receive on regular intervals.</p>
+
+                <form action="./temp/insurance.html">
+                    <button class="insbut" align="center">Buy Insurance</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer" id="contact">
+        <p id="footer1"><b>Follow us on</b></p>
+        <h2>&nbsp&nbsp contact-us</h2>
+        <p><i class="fab fa-instagram-square">&nbsp bharath_bank</i></p>
+        <p>&nbsp&nbsp 8189907633</p>
+        <p><i class="fab fa-facebook">&nbsp BharathBank</i></p>
+        <p>&nbsp&nbsp 044-123456</p>
+        <p><i class="fab fa-twitter">&nbsp bank_bharath</i></p>
+        <p>&nbsp&nbsp E-Mail:&nbsp<a href="#">&nbspCSS@gmail.com</a></p>
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./stylesheet/loginstyle.css">
+    <script src="./js/validatelogin.js"></script>
+
+</head>
+
+<body>
+
+    <h2>Bank Of Bharath</h2>
+    <div class="bg-img">
+        <div class="center">
+            <form onsubmit="return validateForm()" action="Bankproject.html" class="container">
+
+                <h1>Login</h1>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" id="usr">
+                <div id="nam" style="color:red;font-size:14px"></div>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="pass">
+                <div id="passrr" style="color:red"></div>
+
+                <button type="submit" class="btn">Login</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+
+</html>

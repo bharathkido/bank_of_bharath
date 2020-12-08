@@ -1,0 +1,123 @@
+<!DOCTYPE html> 
+<html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel ="stylesheet" href="./stylesheet/stylesheet.css">
+<link rel ="stylesheet" href="./stylesheet/stylesheet2.css">
+
+</head> 
+<body>
+
+
+<div class="navbar">
+  <a href="Bankproject.html">Home</a>
+  <div class="dropdown">
+    <button class="dropbut">Account <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Create New Account</a>
+      <a href="#">Recent Transactions</a>
+      <a href="#">Update details</a>
+      <a href="#">Open Joint Account</a>
+    </div>
+  </div> 
+ <div class="dropdown">
+    <button class="dropbut">Credit/Debit
+ <i class="fa fa-caret-down"></i></button>
+    <div class="dropdown-content">
+      <a href="#">Apply Credit Card</a>
+      <a href="#">Apply Debit Card</a>
+      <a href="#">Credit Card Offers</a>
+      <a href="#">Debit Card Offers</a>
+      <a href="#">Your Card Status</a>
+    </div>
+  </div> 
+  
+ <a href="#features">Features</a>
+  <a href="#news">News</a>
+   <a href="#contact">Contact</a>
+ <i class="fas fa-search-dollar"></i>
+  <input type=" " placeholder="Search.." id="search1" style="float:right;height:30px;width:250px;margin-top:7px;margin-right:10px;"> 
+</div>
+
+
+<div class="openaccount">
+<h1>Bank Of Bharath</h1>
+</div>
+
+
+<div class=bgimg>
+<div class="accountopen">
+<h1 id="accheader">Account Opening Form</h1>
+<form action="Bankproject.html">
+<label>Name:</label>
+<input type="" placeholder="Enter First Name" id="fname" required></input>
+<input type=" " placeholder="Enter Last Name" id="fname" required></input><br>
+<label>Father's Name:</label>
+<input type="text" placeholder="Enter Father's Name" required></input><br>
+<label>Email:</label>
+<input type="text" placeholder="Enter Mail-Id" required></input><br>
+<label>Select Account Type</label>
+<select id="account" required>
+<option value="" disabled selected hidden id="account" >Select Account Type</option>
+<option value="savings account" id="account">Savings Account</option>
+<option value="personal account"id="account">Personal Account</option>
+</select><br><br>
+<label >Select Gender:</label>
+
+<input type="radio" name="gender" value="male">Male</input>
+<input type="radio" name="gender" value="Female">Female</input>
+<input type="radio" name="gender" value="Others">Others</input><br><br>
+
+<label>D.O.B</label>
+<input type="date" id="account" required></input><br><br>
+<label>Aadhaar Card No:</label>
+<input type="text" placeholder="Enter Aadhaar No" required></input><br>
+<label>Monthly Salary:</label>
+<input type="text" placeholder="Enter Salary" required></input><br>
+<label>Martial Status:</label><br><br>
+<input type="radio" name="martial">Single</input>
+<input type="radio" name="martial">Married</input><br><br>
+<input type="radio" name="martial">Widow</input>
+<input type="radio" name="martial">Divorced</input><br><br>
+<label>phone number:</label>
+  <input type="tel" id="account" placeholder="9876543210" pattern="[0-9]{10}" required><br><br>
+<label>Address:</label>
+<input type="address" id="account" placeholder="Enter Address" required><br><br>
+<select id="account" required>
+<option value="" disabled selected hidden>Select State</option>
+<option value="">Andhra pradesh</option>
+<option value="">Bihar</option>
+<option value="">Chandigarh</option>
+<option value="">Delhi</option>
+<option value="">Gujarat</option>
+<option value="">Hariyana</option>
+<option value="">Jammu & Kashmir</option>
+<option value="">Karnataka</option>
+<option value="">Ladakh</option>
+<option value="">Maharastra</option>
+<option value="">Orissa</option>
+<option value="">TamilNadu</option>
+</select>
+<input name="postal-code" id="account" placeholder="600019" autocomplete="home postal-code" required />
+<br><br><br>
+
+
+<button type="submit" id="butt1">Create Account</button>
+</form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

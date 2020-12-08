@@ -1,0 +1,116 @@
+.openaccount{
+width:100%;
+color:white;
+margin-top:20px;
+background-color:teal;
+padding:20px;
+text-align:center;
+}
+#accheader{
+margin-left:20px;
+}
+
+
+
+label{
+  margin-left:100px;
+  margin: 10px;
+  font-size:20px;
+  box-sizing: border-box;
+}
+.bgimg{
+  background-image: url("https://offeo.com/learn/wp-content/uploads/2018/12/Pastel-1024x683.jpg");
+
+  min-height: 600px;
+
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top:50px;
+  z-index:0;
+}
+
+
+
+
+
+
+input[type=text]{
+  width: 50%;
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ box-shadow: 5px 10px #888888;
+ z-index:1;
+}
+input[type=radio]{
+ margin: 10px;
+ padding: 12px 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+#fname{
+  width: 25%;
+  margin-left:60px;
+  padding: 12px 20px;
+  margin: 10px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ box-shadow: 5px 10px #888888;
+}
+
+#butt1{
+background-color: #ff3333;
+  color: white;
+  padding: 14px 14px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 128px;
+  border: none;
+  cursor: pointer;
+  width: 17%;
+}
+.navbar{
+z-index:1;
+}
+
+
+
+#account{
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+ box-shadow: 5px 10px #888888;
+}
+
+
+
+@media screen and (max-width: 600px) {
+.accountopen{
+
+      width: 100%;
+  }}
+
+@media screen and (max-width: 600px) {
+.openaccount{
+      padding-top:70px;
+      width: 100%;
+  }}
+
+
+@media screen and (max-width: 600px) {
+#butt1{
+
+      width: 40%;
+  }}
+
+
+

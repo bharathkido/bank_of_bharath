@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <style>
+        #accno,
+        #code,
+        #money {
+            width: 50%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        
+        #updateButton {
+            background-color: #ff3333;
+            color: white;
+            padding: 14px 14px;
+            margin: 8px 0;
+            margin-left: 220px;
+            border: none;
+            cursor: pointer;
+            width: 10%;
+        }
+        
+        #accTable {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        #accTable td,
+        #accTable th {
+            border: 2px solid #ddd;
+            padding: 8px;
+        }
+        
+        #accTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        
+        #accTable tr:hover {
+            background-color: #ddd;
+        }
+        
+        #accTable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+    </style>
+
+
+
+
+
+</head>
+
+<body>
+    <form>
+        <label>Account No: </label>
+        <input type="text" id="accno"></input><br>
+        <label>IFSC Code: </label>
+        <input type="text" id="code"></input><br>
+        <label>Amount: </label>
+        <input type="text" id="money"></input><br>
+        <button type="button" id="updateButton" class="btn btn-primary" onclick="moneyTransfer();">Add</button>
+    </form>
+    <div class="row">
+        <table id="accTable">
+            <thead>
+                <tr>
+                    <td>Account No</td>
+                    <td>IFSC code</td>
+                    <td>Amount</td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <script>
+        function moneyTransfer() {
+            if ($("#accno").val() != null && $("#accno").val() != '') {
+                // Add product to Table
+                accAddToTable();
+
+                // Clear form fields
+                formClear();
+
+                // Focus to product name field
+                $("#accno").focus();
+            }
+        }
+
+
+        function accAddToTable() {
+            // First check if a <tbody> tag exists, add one if not
+            if ($("#accTable tbody").length == 0) {
+                $("#accTable").append("<tbody></tbody>");
+            }
+
+            // Append product to the table
+            $("#accTable tbody").append("<tr>" +
+                "<td>" + $("#accno").val() + "</td>" +
+                "<td>" + $("#code").val() + "</td>" +
+                "<td>" + $("#money").val() + "</td>" +
+                "</tr>");
+        }
+
+
+        function formClear() {
+            $("#accno").val("");
+            $("#code").val("");
+            $("#money").val("");
+        }
+    </script>
+
+
+
+</body>
+
+</html>
